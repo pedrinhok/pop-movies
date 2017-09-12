@@ -1,8 +1,7 @@
 const CACHE_VERSION = "pop-movies-v1"
 const CACHE_FILES = [
-  "/",
-  "/index.js",
-  "/index.html"
+  "index.js",
+  "index.html"
 ]
 
 self.addEventListener("install", event => {
