@@ -31,9 +31,16 @@ const $dom = {
 }
 
 function addCard(movie){
+  const title = document.createElement("div")
+  title.className = "card-title"
+  title.textContent = movie.title
+  const overview = document.createElement("div")
+  overview.className = "card-overview"
+  overview.textContent = movie.overview
   const card = document.createElement("div")
   card.className = "card"
-  card.textContent = movie.title
+  card.appendChild(title)
+  card.appendChild(overview)
   $dom.content.appendChild(card)
 }
 

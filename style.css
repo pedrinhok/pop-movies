@@ -37,6 +37,16 @@ html, body {
   border: 1px solid #E2E2E2;
 }
 
+.card-title {
+  font-size: 20px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 5px;
+}
+
+.card-overview {
+  text-align: justify;
+}
+
 @media (max-width: 700px) {
   .card {
     flex-basis: 100%;
