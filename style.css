@@ -35,6 +35,9 @@ html, body {
   margin: 1%;
   flex-basis: 35%;
   border: 1px solid #E2E2E2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .card-title {
