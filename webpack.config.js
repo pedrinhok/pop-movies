@@ -4,7 +4,7 @@ const css = new extract("./public/app.css")
 module.exports = {
   entry: "./source/index.jsx",
   output: {
-    filename: "./public/app.jsx"
+    filename: "./public/app.js"
   },
   resolve: {
     extensions: [".js", ".jsx"]
@@ -12,7 +12,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.[js|jsx]$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
