@@ -2,17 +2,11 @@
   "name": "pop-movies",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://github.com/pedrinhok/pop-movies",
+  "license": "MIT",
   "scripts": {
     "start": "webpack -w"
   },
-  "keywords": [],
-  "author": "Pedro Kayser",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pedrinhok/pop-movies/issues"
-  },
-  "homepage": "https://github.com/pedrinhok/pop-movies#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
