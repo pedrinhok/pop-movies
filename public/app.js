@@ -21205,7 +21205,7 @@ exports.default = function (props) {
   return _react2.default.createElement(
     "div",
     null,
-    _react2.default.createElement(_header2.default, { name: "react" }),
+    _react2.default.createElement(_header2.default, { name: "pop-movies" }),
     _react2.default.createElement(_content2.default, null)
   );
 };
