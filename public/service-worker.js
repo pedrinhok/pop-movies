@@ -1,6 +1,7 @@
 const CACHE_VERSION = "pop-movies-v1"
 const CACHE_FILES = [
-  "index.js",
+  "bundle.js",
+  "bundle.css",
   "index.html"
 ]
 

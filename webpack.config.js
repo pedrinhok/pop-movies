@@ -1,10 +1,10 @@
 const extract = require("extract-text-webpack-plugin")
-const css = new extract("./public/app.css")
+const css = new extract("./public/bundle.css")
 
 module.exports = {
   entry: "./source/index.jsx",
   output: {
-    filename: "./public/app.js"
+    filename: "./public/bundle.js"
   },
   resolve: {
     extensions: [".js", ".jsx"]
@@ -16,7 +16,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
-          presets: ["es2015", "react"]
+          presets: ["es2015", "react", "minify"]
         }
       },
       {
