@@ -6,7 +6,7 @@ import "./app.css"
 
 export default props => (
   <div>
-    <Header name="react" />
+    <Header name="pop-movies" />
     <Content />
   </div>
 )
