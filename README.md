@@ -1,6 +1,9 @@
 # pop-movies
 A progressive web application that lists the 20 most popular movies.
 
+## demo
+https://pedrinhok.github.io/pop-movies/public/
+
 ## run
 ```
 npm install
