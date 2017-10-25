@@ -1,28 +1,18 @@
+import axios from "axios"
+
 class themoviedb {
 
-  constructor(key){
-    this.key = key
+  auth(params){
+    params.api_key = "6ae0120d7a6efd7469273fca61a134df"
   }
 
-  discover(params){
-    return this.request("discover/movie", params)
-  }
-
-  query(params){
-    const auth = `api_key=${this.key}`
-    if(!params)
-      return auth
-    params = Object.keys(params)
-      .map((key, value) => `${key}=${value}`)
-      .join("&")
-    return `${auth}&${params}`
-  }
-
-  request(page, params){
-    params = this.query(params)
-    return `https://api.themoviedb.org/3/${page}?${params}`
+  discover(params = {}){
+    this.auth(params)
+    return axios.get("https://api.themoviedb.org/3/discover/movie", {
+      params
+    })
   }
 
 }
 
-export default new themoviedb("6ae0120d7a6efd7469273fca61a134df")
+export default new themoviedb()
