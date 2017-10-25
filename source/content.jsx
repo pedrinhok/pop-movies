@@ -1,4 +1,5 @@
 import React from "react"
+import axios from "axios"
 
 import api from "./api"
 import Card from "./card"
@@ -13,14 +14,15 @@ class Content extends React.Component {
     }
   }
 
-  async componentWillMount() {
-    const request = api.discover({
-      primary_release_year: 2017,
+  componentWillMount() {
+    api.discover({
+      year: 2017,
     })
-    const response = await fetch(request)
-    const data = await response.json()
-    const movies = data.results
-    this.setState({ movies })
+    .then(response => {
+      this.setState({
+        movies: response.data.results
+      })
+    })
   }
 
   cards() {
