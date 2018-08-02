@@ -15,10 +15,7 @@ class Content extends React.Component {
   }
 
   componentWillMount() {
-    api.discover({
-      year: 2017,
-    })
-    .then(response => {
+    api.popular().then(response => {
       this.setState({
         movies: response.data.results
       })
